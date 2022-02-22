@@ -1,0 +1,16 @@
+diff --git a/svelte.config.js b/svelte.config.js
+index 6d91d92..fde0847 100644
+--- a/svelte.config.js
++++ b/svelte.config.js
+@@ -3,7 +3,10 @@ import adapter from '@sveltejs/adapter-static';
+ /** @type {import('@sveltejs/kit').Config} */
+ const config = {
+ 	kit: {
+-		adapter: adapter()
++		adapter: adapter(),
++		paths: {
++			base: "/xkcd-password-generator"
++		}
+ 	}
+ };
+ 
