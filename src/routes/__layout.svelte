@@ -4,7 +4,7 @@
 
 <div class="h-screen flex flex-col justify-between items-center">
 
-  <h1 class="m-6 border-b-4 border-gray-400 dark:border-gray-600 text-2xl text-black dark:text-white">xkcd-style password generator</h1>
+  <h1 class="w-5/6 m-6 text-2xl text-black dark:text-white whitespace-nowrap text-clip overflow-hidden text-center overline decoration-gray-400 dark:decoration-gray-600">an xkcd-style password generator</h1>
 
   <slot />
 

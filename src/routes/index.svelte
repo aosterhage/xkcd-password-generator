@@ -21,7 +21,7 @@
     }
 </script>
 
-<div class="w-1/2 py-2 px-4 flex justify-between items-center gap-2 border-b border-gray-400 dark:border-gray-600 text-3xl">
+<div class="w-5/6 md:w-1/2 py-2 px-4 flex justify-between items-center gap-2 border-b border-gray-400 dark:border-gray-600 text-3xl">
     <div class="whitespace-nowrap text-ellipsis overflow-hidden text-black dark:text-white">
         {password}
     </div>
