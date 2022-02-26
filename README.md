@@ -17,5 +17,4 @@ Obviously this depends on what level you define "secure". From an online web per
 - The page is static with no external interaction. This means that when you generate a password its done in your web browser, on your computer.
 - I use the Web Crypto API (`crypto.getRandomValues()`) to generate cryptographically secure, random, indices for the word list.
 
-From a password security standpoint, its pretty good with the only downside I can think of:
-- Passwords are limited to 4 random words
+From a password security standpoint its pretty good. If you need something *very* secure you shouldn't be using a password / only a password.
