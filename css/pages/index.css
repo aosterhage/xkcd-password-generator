@@ -1,0 +1,124 @@
+/* Undo default browser styling */
+* {
+    all: unset;
+}
+/* Except don't show the title */
+title {
+    display: none;
+}
+
+/* Colors */
+@media (prefers-color-scheme: light) {
+    body {
+        color: black;
+        background-color: white;
+        border-color: black;
+    }
+
+    svg {
+        fill: black;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        color: white;
+        background-color: black;
+        border-color: white;
+    }
+
+    svg {
+        fill: white;
+    }
+}
+
+body {
+    /* Size */
+    min-height: 100vh;
+    min-width: 100vw;
+
+    /* Spacing */
+    margin: 16px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Text */
+    font-family: sans-serif;
+}
+
+.header {
+    /* Size */
+    /* Spacing */
+    /* Layout */
+    /* Text */
+    text-decoration: overline;
+    font-size: xx-large;
+}
+
+.container {
+    /* Size */
+    width: 80%;
+
+    /* Spacing */
+    gap: 16px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Text */
+}
+
+.number-of-words {
+    /* Size */
+    /* Spacing */
+    /* Layout */
+    /* Text */
+    font-size: medium;
+}
+
+.password {
+    /* Size */
+    width: 100%;
+
+    /* Spacing */
+    padding: 6px 16px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    gap: 8px;
+
+    /* Layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Text */
+    font-size: x-large;
+}
+
+.password__value {
+    /* Size */
+    width: 100%;
+
+    /* Spacing */
+    /* Layout */
+    /* Text */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.password_generate .password__copy {
+    /* Size */
+    /* Spacing */
+    /* Layout */
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    /* Text */
+}

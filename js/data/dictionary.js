@@ -1,4 +1,4 @@
-// Borrowed from https://github.com/apostrophecms/random-words/
+// Borrowed from https://github.com/quantum5/correcthorsebatterystaple
 
 export const dictionary = [
     'aback',
