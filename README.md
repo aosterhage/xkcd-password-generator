@@ -1,8 +1,3 @@
-# xkcd-password-generator
-An xkcd-style password generator
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/aosterhage/xkcd-password-generator)
-
 # Overview
 
 Based on the famous [xkcd](https://xkcd.com/936/) that points out how a series of random words are easy for people to remember while *also* being difficult to crack as a password. For more information on entropy and how these passwords stack up see this fairly easy to understand [stack exchange post](https://crypto.stackexchange.com/questions/62597/calculating-entropy-within-xkcd-936-password-strength).
