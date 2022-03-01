@@ -4,8 +4,7 @@ import { getRandomWords } from "../utilities/getRandomWords.js";
 let numberOfWords = 4;
 
 /* DOM elements */
-let numberOfWords__decrement = document.querySelector(".number-of-words__decrement");
-let numberOfWords__increment = document.querySelector(".number-of-words__increment");
+let numberOfWords__range = document.querySelector(".number-of-words__range");
 let numberOfWords__value = document.querySelector(".number-of-words__value");
 let password__copy = document.querySelector(".password__copy");
 let password__generate = document.querySelector(".password__generate");
@@ -15,18 +14,21 @@ let password__value = document.querySelector(".password__value");
 numberOfWords__value.textContent = numberOfWords;
 
 // Tie up all button click events
-numberOfWords__decrement.addEventListener("click", decrementNumberOfWords);
-numberOfWords__increment.addEventListener("click", incrementNumberOfWords);
+numberOfWords__range.addEventListener("input", changeNumberOfWords);
 password__generate.addEventListener("click", generatePassword);
 password__copy.addEventListener("click", copyPassword);
 
+function changeNumberOfWords(event) {
+    numberOfWords = numberOfWords__range.value;
+    numberOfWords__value.textContent = numberOfWords;
+}
 
 function generatePassword(event) {
     let words = getRandomWords(numberOfWords);
     password__value.textContent = words.join(" ");
 }
 
-function copyPassword() {
+function copyPassword(event) {
     let password = password__value.textContent;
 
     let type = "text/plain";
@@ -34,20 +36,4 @@ function copyPassword() {
     let data = [new ClipboardItem({ [type]: blob })];
 
     navigator.clipboard.write(data);
-}
-
-function decrementNumberOfWords() {
-    if (numberOfWords > 1) {
-        numberOfWords--;
-    }
-
-    numberOfWords__value.textContent = numberOfWords;
-}
-
-function incrementNumberOfWords() {
-    if (numberOfWords < 9) {
-        numberOfWords++;
-    }
-
-    numberOfWords__value.textContent = numberOfWords;
 }

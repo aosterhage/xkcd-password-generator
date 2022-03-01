@@ -15,12 +15,6 @@
         an xkcd password generator
     </h1>
     <div class="container">
-        <div class="number-of-words">
-            <span class="number-of-words__string">number of words:</span>
-            <button class="number-of-words__decrement">-</button>
-            <span class="number-of-words__value"></span>
-            <button class="number-of-words__increment">+</button>
-        </div>
         <div class="password">
             <span class="password__value">
                 random words go here
@@ -43,6 +37,13 @@
                     <path d="M22 6v16h-16v-16h16zm2-2h-20v20h20v-20zm-24 17v-21h21v2h-19v19h-2z" />
                 </svg>
             </button>
+        </div>
+        <div class="number-of-words">
+            <div class="number-of-words__string_value">
+                number of words:
+                <span class="number-of-words__value"></span>
+            </div>
+            <input type="range" min="1" max="9" value="4" class="number-of-words__range">
         </div>
     </div>
     <a class="footer" href="https://github.com/aosterhage/xkcd-password-generator">
