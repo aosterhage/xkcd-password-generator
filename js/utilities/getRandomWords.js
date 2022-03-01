@@ -1,4 +1,4 @@
-import { dictionary } from "../data/dictionary.js";
+import { dictionary } from '../data/dictionary.js';
 
 export function getRandomWords(numberOfWords) {
     let indices = getRandomValues(numberOfWords, dictionary.length);
