@@ -33,11 +33,12 @@ title {
 
 body {
     /* Size */
-    min-height: 100vh;
-    min-width: 100vw;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
 
     /* Spacing */
-    margin: 16px;
+    padding: 16px;
 
     /* Layout */
     display: flex;
